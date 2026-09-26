@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Metal Straw: The Individualization of Environmental Activism and its Consequences on Meaningful Climate Action and Water Activism | The AWA Project</title>
+<meta name="description" content="Between 2004 and 2006, fossil fuel company British Petroleum (BP) hired advertising, marketing, and public relations firm Ogilvy to promote and popularize the term “carbon footprint”. Attached to this cultural…">
+<link rel="icon" type="image/png" sizes="64x64" href="../img/favicon-64.png">
+<link rel="icon" type="image/png" sizes="512x512" href="../img/favicon.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="The Metal Straw: The Individualization of Environmental Activism and its Consequences on Meaningful Climate Action and Water Activism">
+<meta property="og:image" content="img/the-metal-straw.webp">
+<meta property="og:type" content="article">
+<style>
+  :root{
+    --navy:#273655; --lightblue:#CDDFFA; --sage:#D6E2B2; --orange:#F35A0E;
+    --cream:#FBFAF6; --white:#FFFFFF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;color:var(--navy);background:var(--cream);line-height:1.5;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,.display{font-family:'Anton',sans-serif;text-transform:uppercase;letter-spacing:-0.01em;line-height:0.95;font-weight:400;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(251,250,246,0.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(39,54,85,0.08);}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;max-width:1180px;margin:0 auto;}
+  .nav img{height:42px;}
+  .nav-links{display:flex;gap:26px;align-items:center;}
+  .nav-links a{font-size:14px;font-weight:600;color:var(--navy);opacity:0.85;}
+  .nav-links a.active{opacity:1;border-bottom:2px solid var(--orange);padding-bottom:4px;}
+  .btn{display:inline-block;font-weight:700;font-size:14px;padding:12px 26px;border-radius:999px;border:2px solid transparent;white-space:nowrap;}
+  .btn-orange{background:var(--orange);color:var(--white);}
+  .btn-outline-navy{background:transparent;color:var(--navy);border-color:var(--navy);}
+  .btn-outline-light{background:transparent;color:var(--white);border:2px solid var(--lightblue);}
+  .btn-lg{padding:14px 32px;}
+  .mobile-toggle{display:none;background:none;border:none;font-size:26px;color:var(--navy);}
+
+  .page-hero{background:var(--navy);color:var(--white);padding:70px 0 60px;position:relative;overflow:hidden;}
+  .page-hero .eyebrow{font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--lightblue);margin-bottom:16px;display:flex;align-items:center;gap:8px;}
+  .page-hero .eyebrow::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--orange);}
+  .page-hero h1{font-size:clamp(34px,6vw,58px);max-width:760px;margin-bottom:18px;}
+  .page-hero p{max-width:600px;font-size:17px;color:rgba(255,255,255,0.82);}
+
+  section{padding:80px 0;}
+  .section-head{max-width:640px;margin-bottom:44px;}
+  .section-head .eyebrow{font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--orange);margin-bottom:12px;display:flex;align-items:center;gap:8px;}
+  .section-head .eyebrow::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--orange);}
+  .section-head h2{font-size:clamp(28px,4.5vw,42px);color:var(--navy);}
+  .section-head p{margin-top:14px;font-size:16px;color:rgba(39,54,85,0.75);}
+
+  .bg-white{background:var(--white);}
+  .bg-sage{background:var(--sage);}
+  .bg-navy{background:var(--navy);color:var(--white);}
+  .bg-navy .section-head h2{color:var(--white);}
+  .bg-navy .section-head p{color:rgba(255,255,255,0.75);}
+  .bg-navy .section-head .eyebrow{color:var(--lightblue);}
+  .bg-navy .section-head .eyebrow::before{background:var(--lightblue);}
+
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  .stat-grid.three{grid-template-columns:repeat(3,1fr);}
+  .blob{background:var(--lightblue);padding:36px 22px;text-align:center;border-radius:63% 37% 54% 46% / 43% 37% 63% 57%;}
+  .blob.sage{background:var(--sage);}
+  .blob .num{font-family:'Anton',sans-serif;font-size:42px;color:var(--navy);display:block;line-height:1;}
+  .blob .label{font-size:13px;font-weight:600;color:var(--navy);opacity:0.75;margin-top:8px;display:block;}
+
+  .pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .pillar-card{background:var(--cream);border-radius:20px;padding:32px 26px;}
+  .pillar-mark{width:44px;height:44px;border-radius:50%;background:var(--orange);margin-bottom:22px;display:flex;align-items:center;justify-content:center;color:var(--white);font-family:'Anton',sans-serif;font-size:18px;}
+  .pillar-card h3{font-family:'Inter',sans-serif;font-weight:700;font-size:18px;color:var(--navy);margin-bottom:10px;line-height:1.2;}
+  .pillar-card p{font-size:14px;color:rgba(39,54,85,0.72);margin-bottom:16px;}
+  .pillar-stats{display:flex;gap:16px;flex-wrap:wrap;}
+  .pillar-stats span{font-size:12px;font-weight:700;color:var(--navy);background:var(--lightblue);padding:5px 12px;border-radius:999px;}
+
+  .init-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .init-card{background:var(--white);border:1px solid rgba(39,54,85,0.08);border-radius:18px;padding:28px;}
+  .init-card .tag{font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:var(--orange);font-weight:700;margin-bottom:10px;display:block;}
+  .init-card h3{font-family:'Inter',sans-serif;font-weight:700;font-size:17px;margin-bottom:10px;}
+  .init-card p{font-size:14px;color:rgba(39,54,85,0.72);}
+
+  .timeline{display:flex;flex-direction:column;gap:18px;}
+  .bg-navy .tl-item{background:rgba(255,255,255,0.06);}
+  .bg-sage .tl-item{background:var(--white);}
+  @media (max-width:720px){ .tl-thumb{width:100%;height:200px;} }
+
+  .step-grid{display:flex;flex-direction:column;gap:16px;}
+  .step-item{display:flex;gap:20px;align-items:flex-start;padding:22px 24px;background:var(--white);border-radius:16px;border:1px solid rgba(39,54,85,0.08);}
+  .step-num{width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--white);font-family:'Anton',sans-serif;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .step-item h3{font-family:'Inter',sans-serif;font-weight:700;font-size:16px;margin-bottom:6px;}
+  .step-item p{font-size:14px;color:rgba(39,54,85,0.72);}
+
+  .sdg-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .sdg-card{background:var(--white);border-radius:18px;overflow:hidden;border:1px solid rgba(39,54,85,0.08);}
+  .sdg-card .sdg-top{padding:20px 24px;color:var(--white);display:flex;align-items:center;gap:14px;}
+  .sdg-card .sdg-num{font-family:'Anton',sans-serif;font-size:28px;}
+  .sdg-card .sdg-top h3{font-family:'Inter',sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:0.03em;}
+  .sdg-card .sdg-body{padding:22px 24px;}
+  .sdg-card .sdg-body p{font-size:14px;color:rgba(39,54,85,0.75);margin-bottom:12px;}
+  .sdg-card .sdg-body p:last-child{margin-bottom:0;}
+  .sdg-card .sdg-body .label{font-size:11px;text-transform:uppercase;letter-spacing:0.05em;font-weight:700;color:var(--orange);}
+  .sdg-4{background:#C5192D;} .sdg-6{background:#26BDE2;} .sdg-13{background:#3F7E44;} .sdg-17{background:#19486A;}
+
+  .event-card{display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;}
+  .event-eyebrow{font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--navy);opacity:0.6;margin-bottom:10px;}
+  .event-card h2{font-size:clamp(26px,4vw,38px);max-width:560px;margin-bottom:14px;}
+  .event-card p{max-width:480px;font-size:16px;opacity:0.85;}
+
+  .quote-block{background:var(--sage);border-radius:20px;padding:44px;max-width:820px;margin:0 auto;}
+  .quote-block p{font-size:18px;line-height:1.6;color:var(--navy);margin-bottom:20px;}
+  .quote-block .attr{font-weight:700;font-size:14px;}
+  .quote-block .attr span{font-weight:400;opacity:0.7;}
+
+  .cta-strip{background:var(--navy);color:var(--white);padding:80px 0;text-align:center;}
+  .cta-strip h2{font-size:clamp(28px,4.5vw,44px);max-width:680px;margin:0 auto 20px;}
+  .cta-strip p{color:rgba(255,255,255,0.75);max-width:520px;margin:0 auto 30px;font-size:16px;}
+  .cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+
+  footer{background:#1c2740;padding:50px 0 26px;color:rgba(255,255,255,0.7);font-size:13px;text-align:center;}
+
+  @media (max-width:900px){
+    .stat-grid{grid-template-columns:repeat(2,1fr);}
+    .pillar-grid, .init-grid, .sdg-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:720px){
+    .nav-links{display:none;} .mobile-toggle{display:block;}
+    .stat-grid, .stat-grid.three, .pillar-grid, .init-grid, .sdg-grid, .values-grid{grid-template-columns:1fr;}
+  }
+  :focus-visible{outline:3px solid var(--orange);outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){*{transition:none !important;scroll-behavior:auto !important;}}
+
+  .blog-hero{padding:72px 0 64px;}
+  .blog-hero h1{max-width:820px;}
+  .post-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 24px;}
+  .post-card{display:flex;flex-direction:column;background:var(--white);border-radius:18px;overflow:hidden;border:1px solid rgba(39,54,85,0.08);transition:border-color .15s;}
+  .post-card:hover{border-color:var(--navy);}
+  .post-card:hover h3{text-decoration:underline;text-decoration-color:var(--orange);text-underline-offset:3px;}
+  .post-card .thumb{aspect-ratio:16/10;background:var(--lightblue);overflow:hidden;}
+  .post-card .thumb img{width:100%;height:100%;object-fit:cover;}
+  .post-card .body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px;flex:1;}
+  .post-meta{font-size:12.5px;font-weight:600;color:rgba(39,54,85,0.62);}
+  .post-meta .tag{color:var(--orange);font-weight:700;}
+  .post-card h3{font-family:'Inter',sans-serif;text-transform:none;letter-spacing:0;font-weight:700;font-size:17.5px;line-height:1.3;color:var(--navy);}
+  .post-card p{font-size:14px;color:rgba(39,54,85,0.72);line-height:1.55;}
+  .post-card .by{margin-top:auto;padding-top:8px;font-size:13px;font-weight:600;color:var(--navy);}
+  .feature{display:grid;grid-template-columns:1.25fr 1fr;background:var(--white);border-radius:22px;overflow:hidden;border:1px solid rgba(39,54,85,0.08);margin-bottom:56px;}
+  .feature:hover{border-color:var(--navy);}
+  .feature .thumb{min-height:340px;background:var(--lightblue);}
+  .feature .thumb img{width:100%;height:100%;object-fit:cover;}
+  .feature .body{padding:40px 38px;display:flex;flex-direction:column;justify-content:center;gap:14px;}
+  .feature h2{font-size:clamp(26px,3.2vw,38px);color:var(--navy);}
+  .feature p{font-size:15.5px;color:rgba(39,54,85,0.75);}
+  .feature .latest{align-self:flex-start;background:var(--sage);color:var(--navy);font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px;}
+  .year-head{font-family:'Anton',sans-serif;font-size:28px;color:var(--navy);margin:8px 0 22px;padding-top:26px;border-top:2px solid var(--navy);}
+  .year-block{margin-bottom:48px;}
+
+  .post-head{padding:48px 0 36px;background:var(--cream);}
+  .post-head .wrap{max-width:1040px;}
+  .post-head .inner{max-width:860px;}
+  .back{display:inline-block;font-size:14px;font-weight:600;color:var(--navy);opacity:.75;margin-bottom:26px;}
+  .back:hover{opacity:1;text-decoration:underline;}
+  .post-head .tagline{font-size:13px;font-weight:700;color:var(--orange);margin-bottom:14px;}
+  .post-head h1{font-size:clamp(30px,5vw,54px);color:var(--navy);margin-bottom:22px;}
+  .byline{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14.5px;color:rgba(39,54,85,0.72);}
+  .byline strong{color:var(--navy);font-weight:700;}
+  .cover{max-width:1040px;margin:0 auto;padding:0 28px;}
+  .cover img{width:100%;height:auto;max-height:600px;object-fit:cover;border-radius:18px;background:var(--lightblue);}
+  .cover figcaption{font-size:12.5px;color:rgba(39,54,85,0.6);margin-top:10px;}
+  .cover figcaption a{text-decoration:underline;}
+  .post-body{padding:48px 0 72px;}
+  .prose{max-width:700px;margin:0 auto;padding:0 28px;font-size:17.5px;line-height:1.75;color:#2b3a58;}
+  .prose p{margin:0 0 1.25em;}
+  .prose h2{font-family:'Inter',sans-serif;text-transform:none;letter-spacing:-0.01em;font-weight:700;font-size:26px;line-height:1.25;color:var(--navy);margin:2em 0 .7em;scroll-margin-top:90px;}
+  .prose h3{font-family:'Inter',sans-serif;text-transform:none;letter-spacing:0;font-weight:700;font-size:19.5px;line-height:1.3;color:var(--navy);margin:1.7em 0 .6em;scroll-margin-top:90px;}
+  .prose a{color:var(--navy);text-decoration:underline;text-decoration-color:var(--orange);text-underline-offset:3px;}
+  .prose ul{list-style:none;margin:0 0 1.4em;padding:0;}
+  .prose ul li{position:relative;padding-left:22px;margin-bottom:.7em;}
+  .prose ul li::before{content:'';position:absolute;left:2px;top:.72em;width:7px;height:7px;border-radius:50%;background:var(--orange);}
+  .prose blockquote{margin:1.6em 0;padding:24px 28px;background:var(--sage);border-radius:16px;font-size:17px;line-height:1.65;}
+  .prose blockquote p:last-child{margin:0;}
+  .prose ul.timeline-list li{padding:14px 0 14px 128px;margin:0;border-top:1px solid rgba(39,54,85,0.12);font-size:16px;line-height:1.6;}
+  .prose ul.timeline-list li::before{display:none;}
+  .prose ul.timeline-list li strong{position:absolute;left:0;top:14px;width:116px;font-family:'Anton',sans-serif;font-weight:400;font-size:17px;color:var(--orange);line-height:1.35;}
+  .prose ul.handle-list{display:flex;flex-wrap:wrap;gap:8px;}
+  .prose ul.handle-list li{padding:0;margin:0;}
+  .prose ul.handle-list li::before{display:none;}
+  .prose ul.handle-list a{display:inline-block;background:var(--lightblue);border-radius:999px;padding:4px 14px;font-size:14.5px;font-weight:600;text-decoration:none;}
+  .prose p.q{font-weight:700;color:var(--navy);margin-top:2em;}
+  .prose p.q span,.prose p.a span{display:block;font-size:12.5px;font-weight:700;color:var(--orange);margin-bottom:2px;}
+  .prose p.a span{color:rgba(39,54,85,0.6);}
+  .toc{background:var(--white);border:1px solid rgba(39,54,85,0.1);border-radius:16px;padding:20px 24px;margin:0 0 2.2em;font-size:15px;}
+  .toc strong{display:block;font-size:13px;color:rgba(39,54,85,0.6);margin-bottom:8px;}
+  .toc ol{margin:0;padding-left:20px;} .toc li{margin:4px 0;}
+  .toc a{text-decoration:none;}
+  .toc a:hover{text-decoration:underline;}
+  .lang-switch{display:inline-flex;background:var(--white);border:1px solid rgba(39,54,85,0.15);border-radius:999px;padding:4px;margin-bottom:28px;}
+  .lang-switch button{font:inherit;font-size:14px;font-weight:600;border:0;background:none;color:var(--navy);padding:7px 18px;border-radius:999px;cursor:pointer;}
+  .lang-switch button[aria-pressed="true"]{background:var(--navy);color:var(--white);}
+  .refs{margin-top:2.4em;border-top:2px solid var(--navy);padding-top:18px;}
+  .refs summary{cursor:pointer;font-weight:700;font-size:16px;color:var(--navy);}
+  .refs ul{margin-top:14px;} .refs li{font-size:14.5px;line-height:1.6;word-break:break-word;}
+  .post-nav{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:900px;margin:0 auto;padding:0 28px;}
+  .post-nav a{display:block;background:var(--white);border:1px solid rgba(39,54,85,0.1);border-radius:16px;padding:20px 22px;}
+  .post-nav a:hover{border-color:var(--navy);}
+  .post-nav span{display:block;font-size:12.5px;font-weight:700;color:var(--orange);margin-bottom:6px;}
+  .post-nav strong{font-size:15.5px;line-height:1.35;color:var(--navy);}
+  .post-nav .older{text-align:right;grid-column:2;}
+  @media (max-width:900px){.post-grid{grid-template-columns:1fr 1fr;} .feature{grid-template-columns:1fr;} .feature .thumb{min-height:240px;aspect-ratio:16/9;}}
+  @media (max-width:620px){.post-grid{grid-template-columns:1fr;} .feature .body{padding:26px 22px;} .prose{font-size:16.5px;} .prose ul.timeline-list li{padding-left:0;padding-top:40px;} .post-nav{grid-template-columns:1fr;} .post-nav .older{grid-column:1;text-align:left;}}
+</style>
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a href="../index.html"><img src="../img/awa-logo.png" alt="The AWA Project"></a>
+    <div class="nav-links">
+      <a href="../work.html">Our Work</a>
+      <a href="../youth.html">Youth in Action</a>
+      <a href="../events.html">Events</a>
+      <a href="../impact.html">Impact</a>
+      <a href="../sdgs.html">Know Your SDGs</a>
+      <a href="../behind.html">Behind AWA</a>
+      <a href="../blog/index.html" class="active">Blog</a>
+      <a href="../shop.html">Shop</a>
+    </div>
+    <a href="#" class="btn btn-outline-navy">Donate</a>
+    <button class="mobile-toggle" aria-label="Menu">&#9776;</button>
+  </nav>
+</header>
+<section class="post-head">
+  <div class="wrap"><div class="inner">
+    <a class="back" href="index.html">&larr; All posts</a>
+    <div class="tagline">Activism · Opinion</div>
+    <h1>The Metal Straw: The Individualization of Environmental Activism and its Consequences on Meaningful Climate Action and Water Activism</h1>
+    <div class="byline"><span>By <strong>Juan Pendavis, Research and Academia Consultant</strong></span><span>27 May 2024</span><span>3 min read</span></div>
+  </div></div>
+</section>
+<figure class="cover"><img src="img/the-metal-straw.webp" alt="" width="612" height="408" style="object-position:center"></figure>
+<section class="post-body" style="padding-bottom:40px">
+  <article class="prose">
+<p>Between 2004 and 2006, fossil fuel company British Petroleum (BP) hired advertising, marketing, and public relations firm Ogilvy to promote and popularize the term “carbon footprint”. Attached to this cultural campaign, BP rolled out a “carbon footprint calculator” where you could assess how your daily life, be it work, leisure, transportation, food, etc., was causing climate change, effectively letting you know of your individual responsibility in causing environmental collapse by having taken that one trip to the Bahamas during your vacations.</p>
+<p>The individualization or atomization of ecological and environmental impact has historically served as an effective tool for these “interested parties” to obfuscate the scale of their impact, existing environmental issues, and necessary action by shifting blame and responsibility from them, representatives of the systemic, to the individual or household level. This strategy has only grown with time and has effectively preyed upon the hubris of aspiring activists and their thirst to make a difference by peddling individualized solutions that serve more as a self-gratifying action and a social signifier of virtue than as an effective environmental activism strategy. Nowadays we see everything from metal straws to save the turtles, bottles in toilet tanks to save on flushing, to reusable tote bags in supermarkets to shrink the Great Pacific Garbage Patch.</p>
+<p>And yet, with all this, little to no change is produced. Let's take a look at water as a relevant example due to the scope and interest of AWA. According to the 2024 UN World Water Development Report, none of the SDG 6 targets appear to be on track. 2.2 billion people live without access to safely managed drinking water, 3.5 billion live without access to safely managed sanitation services, global freshwater withdrawals have climbed to over 4 trillion cubic meters a year, and contaminants in water bodies, including pharmaceuticals, hormones, industrial chemicals, detergents, cyanotoxins, and nanomaterials, are becoming an issue of concern in all regions around the globe.</p>
+<p>And all of this is not even touching food and agriculture. Agriculture, for those unaware, accounts for 70% of all global freshwater withdrawals. According to an Oxfam 2024 report, only 28% of the biggest and most influential global food and agriculture corporations, which account for more than half of the world’s food and agriculture revenue, are committing to or reporting a reduction in their water withdrawals, with only 23% explicitly stating that they are taking direct action to reduce water pollution.</p>
+<p>The fact of the matter is that it is crucial to understand the magnitude and scale of how water issues will affect not just our daily lives, but the collective global human experience if meaningful change concerning the aforementioned issues is not produced. Half of the world’s population could be living in areas facing water scarcity by as early as 2025, and not just that: some 700 million people could be displaced by intense water scarcity by 2030. By 2040, around 1 in 4 children worldwide will be living in areas experiencing extremely high water stress.</p>
+<p>The picture being painted, if you will, is that water activism, just like any other form of environmental activism, must be tailored to the systemic and grand scope of its issue if it is to make an impact. It requires a shift from the individualized culture of atomized activism to collective action and a focus on the institutions with the capacity to create meaningful change on a collective and systemic level, be it local, regional, or national governments, private companies, etc., through organization and direct action. This should not be misinterpreted as an attack on those who use metal straws, bottles in toilet tanks, hemp tote bags, etc. These all can be honorable individual approaches to minimize the effect of one’s own habits upon the environment. Yet one cannot confuse this for effective activism or internalize the practice through a savior complex. One does not create meaningful change, especially on a systemic scale, with the figurative metal straw, but through organization, activism, and collective action.</p>
+<p><em>The opinions expressed in this article are the author’s own and do not necessarily represent those of The AWA Project.</em></p>
+
+  </article>
+</section>
+<section style="padding:0 0 80px"><div class="post-nav"><a class="newer" href="tapped-out-mexicos-urgent-water-crisis.html"><span>&larr; Newer</span><strong>Tapped Out: Mexico’s Urgent Water Crisis</strong></a><a class="older" href="getting-to-know-san-juan-de-ihuanco.html"><span>Older &rarr;</span><strong>Getting to Know San Juan de Ihuanco: AWA’s Interview with the Community President</strong></a></div></section>
+<footer>
+  <div class="wrap">
+    &copy; 2026 The AWA Project &middot; A youth-led movement for water justice
+  </div>
+</footer>
+<style>
+  @media (max-width:720px){
+    .nav{position:relative;flex-wrap:wrap;}
+    .nav-links.open{display:flex;flex-direction:column;align-items:flex-start;gap:4px;width:100%;order:10;padding:12px 0 6px;}
+    .nav-links.open a{padding:8px 0;font-size:16px;}
+  }
+</style>
+<script>
+document.querySelectorAll('.mobile-toggle').forEach(function(b){
+  var links=b.closest('.nav').querySelector('.nav-links');
+  b.setAttribute('aria-expanded','false');
+  b.addEventListener('click',function(){var o=links.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+});
+</script>
+</body>
+</html>

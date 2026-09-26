@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why We Wait for a Water Crisis to Care: The Cost of Water Invisibility | The AWA Project</title>
+<meta name="description" content="In the early months of 2018, Cape Town became the first major city in the world to be on the brink of Day Zero: the moment when municipal water could…">
+<link rel="icon" type="image/png" sizes="64x64" href="../img/favicon-64.png">
+<link rel="icon" type="image/png" sizes="512x512" href="../img/favicon.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="Why We Wait for a Water Crisis to Care: The Cost of Water Invisibility">
+<meta property="og:image" content="img/why-we-wait-for-a-water-crisis-to-care.webp">
+<meta property="og:type" content="article">
+<style>
+  :root{
+    --navy:#273655; --lightblue:#CDDFFA; --sage:#D6E2B2; --orange:#F35A0E;
+    --cream:#FBFAF6; --white:#FFFFFF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;color:var(--navy);background:var(--cream);line-height:1.5;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,.display{font-family:'Anton',sans-serif;text-transform:uppercase;letter-spacing:-0.01em;line-height:0.95;font-weight:400;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(251,250,246,0.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(39,54,85,0.08);}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;max-width:1180px;margin:0 auto;}
+  .nav img{height:42px;}
+  .nav-links{display:flex;gap:26px;align-items:center;}
+  .nav-links a{font-size:14px;font-weight:600;color:var(--navy);opacity:0.85;}
+  .nav-links a.active{opacity:1;border-bottom:2px solid var(--orange);padding-bottom:4px;}
+  .btn{display:inline-block;font-weight:700;font-size:14px;padding:12px 26px;border-radius:999px;border:2px solid transparent;white-space:nowrap;}
+  .btn-orange{background:var(--orange);color:var(--white);}
+  .btn-outline-navy{background:transparent;color:var(--navy);border-color:var(--navy);}
+  .btn-outline-light{background:transparent;color:var(--white);border:2px solid var(--lightblue);}
+  .btn-lg{padding:14px 32px;}
+  .mobile-toggle{display:none;background:none;border:none;font-size:26px;color:var(--navy);}
+
+  .page-hero{background:var(--navy);color:var(--white);padding:70px 0 60px;position:relative;overflow:hidden;}
+  .page-hero .eyebrow{font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--lightblue);margin-bottom:16px;display:flex;align-items:center;gap:8px;}
+  .page-hero .eyebrow::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--orange);}
+  .page-hero h1{font-size:clamp(34px,6vw,58px);max-width:760px;margin-bottom:18px;}
+  .page-hero p{max-width:600px;font-size:17px;color:rgba(255,255,255,0.82);}
+
+  section{padding:80px 0;}
+  .section-head{max-width:640px;margin-bottom:44px;}
+  .section-head .eyebrow{font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--orange);margin-bottom:12px;display:flex;align-items:center;gap:8px;}
+  .section-head .eyebrow::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--orange);}
+  .section-head h2{font-size:clamp(28px,4.5vw,42px);color:var(--navy);}
+  .section-head p{margin-top:14px;font-size:16px;color:rgba(39,54,85,0.75);}
+
+  .bg-white{background:var(--white);}
+  .bg-sage{background:var(--sage);}
+  .bg-navy{background:var(--navy);color:var(--white);}
+  .bg-navy .section-head h2{color:var(--white);}
+  .bg-navy .section-head p{color:rgba(255,255,255,0.75);}
+  .bg-navy .section-head .eyebrow{color:var(--lightblue);}
+  .bg-navy .section-head .eyebrow::before{background:var(--lightblue);}
+
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  .stat-grid.three{grid-template-columns:repeat(3,1fr);}
+  .blob{background:var(--lightblue);padding:36px 22px;text-align:center;border-radius:63% 37% 54% 46% / 43% 37% 63% 57%;}
+  .blob.sage{background:var(--sage);}
+  .blob .num{font-family:'Anton',sans-serif;font-size:42px;color:var(--navy);display:block;line-height:1;}
+  .blob .label{font-size:13px;font-weight:600;color:var(--navy);opacity:0.75;margin-top:8px;display:block;}
+
+  .pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .pillar-card{background:var(--cream);border-radius:20px;padding:32px 26px;}
+  .pillar-mark{width:44px;height:44px;border-radius:50%;background:var(--orange);margin-bottom:22px;display:flex;align-items:center;justify-content:center;color:var(--white);font-family:'Anton',sans-serif;font-size:18px;}
+  .pillar-card h3{font-family:'Inter',sans-serif;font-weight:700;font-size:18px;color:var(--navy);margin-bottom:10px;line-height:1.2;}
+  .pillar-card p{font-size:14px;color:rgba(39,54,85,0.72);margin-bottom:16px;}
+  .pillar-stats{display:flex;gap:16px;flex-wrap:wrap;}
+  .pillar-stats span{font-size:12px;font-weight:700;color:var(--navy);background:var(--lightblue);padding:5px 12px;border-radius:999px;}
+
+  .init-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .init-card{background:var(--white);border:1px solid rgba(39,54,85,0.08);border-radius:18px;padding:28px;}
+  .init-card .tag{font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:var(--orange);font-weight:700;margin-bottom:10px;display:block;}
+  .init-card h3{font-family:'Inter',sans-serif;font-weight:700;font-size:17px;margin-bottom:10px;}
+  .init-card p{font-size:14px;color:rgba(39,54,85,0.72);}
+
+  .timeline{display:flex;flex-direction:column;gap:18px;}
+  .bg-navy .tl-item{background:rgba(255,255,255,0.06);}
+  .bg-sage .tl-item{background:var(--white);}
+  @media (max-width:720px){ .tl-thumb{width:100%;height:200px;} }
+
+  .step-grid{display:flex;flex-direction:column;gap:16px;}
+  .step-item{display:flex;gap:20px;align-items:flex-start;padding:22px 24px;background:var(--white);border-radius:16px;border:1px solid rgba(39,54,85,0.08);}
+  .step-num{width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--white);font-family:'Anton',sans-serif;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .step-item h3{font-family:'Inter',sans-serif;font-weight:700;font-size:16px;margin-bottom:6px;}
+  .step-item p{font-size:14px;color:rgba(39,54,85,0.72);}
+
+  .sdg-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .sdg-card{background:var(--white);border-radius:18px;overflow:hidden;border:1px solid rgba(39,54,85,0.08);}
+  .sdg-card .sdg-top{padding:20px 24px;color:var(--white);display:flex;align-items:center;gap:14px;}
+  .sdg-card .sdg-num{font-family:'Anton',sans-serif;font-size:28px;}
+  .sdg-card .sdg-top h3{font-family:'Inter',sans-serif;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:0.03em;}
+  .sdg-card .sdg-body{padding:22px 24px;}
+  .sdg-card .sdg-body p{font-size:14px;color:rgba(39,54,85,0.75);margin-bottom:12px;}
+  .sdg-card .sdg-body p:last-child{margin-bottom:0;}
+  .sdg-card .sdg-body .label{font-size:11px;text-transform:uppercase;letter-spacing:0.05em;font-weight:700;color:var(--orange);}
+  .sdg-4{background:#C5192D;} .sdg-6{background:#26BDE2;} .sdg-13{background:#3F7E44;} .sdg-17{background:#19486A;}
+
+  .event-card{display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;}
+  .event-eyebrow{font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--navy);opacity:0.6;margin-bottom:10px;}
+  .event-card h2{font-size:clamp(26px,4vw,38px);max-width:560px;margin-bottom:14px;}
+  .event-card p{max-width:480px;font-size:16px;opacity:0.85;}
+
+  .quote-block{background:var(--sage);border-radius:20px;padding:44px;max-width:820px;margin:0 auto;}
+  .quote-block p{font-size:18px;line-height:1.6;color:var(--navy);margin-bottom:20px;}
+  .quote-block .attr{font-weight:700;font-size:14px;}
+  .quote-block .attr span{font-weight:400;opacity:0.7;}
+
+  .cta-strip{background:var(--navy);color:var(--white);padding:80px 0;text-align:center;}
+  .cta-strip h2{font-size:clamp(28px,4.5vw,44px);max-width:680px;margin:0 auto 20px;}
+  .cta-strip p{color:rgba(255,255,255,0.75);max-width:520px;margin:0 auto 30px;font-size:16px;}
+  .cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+
+  footer{background:#1c2740;padding:50px 0 26px;color:rgba(255,255,255,0.7);font-size:13px;text-align:center;}
+
+  @media (max-width:900px){
+    .stat-grid{grid-template-columns:repeat(2,1fr);}
+    .pillar-grid, .init-grid, .sdg-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:720px){
+    .nav-links{display:none;} .mobile-toggle{display:block;}
+    .stat-grid, .stat-grid.three, .pillar-grid, .init-grid, .sdg-grid, .values-grid{grid-template-columns:1fr;}
+  }
+  :focus-visible{outline:3px solid var(--orange);outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){*{transition:none !important;scroll-behavior:auto !important;}}
+
+  .blog-hero{padding:72px 0 64px;}
+  .blog-hero h1{max-width:820px;}
+  .post-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 24px;}
+  .post-card{display:flex;flex-direction:column;background:var(--white);border-radius:18px;overflow:hidden;border:1px solid rgba(39,54,85,0.08);transition:border-color .15s;}
+  .post-card:hover{border-color:var(--navy);}
+  .post-card:hover h3{text-decoration:underline;text-decoration-color:var(--orange);text-underline-offset:3px;}
+  .post-card .thumb{aspect-ratio:16/10;background:var(--lightblue);overflow:hidden;}
+  .post-card .thumb img{width:100%;height:100%;object-fit:cover;}
+  .post-card .body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px;flex:1;}
+  .post-meta{font-size:12.5px;font-weight:600;color:rgba(39,54,85,0.62);}
+  .post-meta .tag{color:var(--orange);font-weight:700;}
+  .post-card h3{font-family:'Inter',sans-serif;text-transform:none;letter-spacing:0;font-weight:700;font-size:17.5px;line-height:1.3;color:var(--navy);}
+  .post-card p{font-size:14px;color:rgba(39,54,85,0.72);line-height:1.55;}
+  .post-card .by{margin-top:auto;padding-top:8px;font-size:13px;font-weight:600;color:var(--navy);}
+  .feature{display:grid;grid-template-columns:1.25fr 1fr;background:var(--white);border-radius:22px;overflow:hidden;border:1px solid rgba(39,54,85,0.08);margin-bottom:56px;}
+  .feature:hover{border-color:var(--navy);}
+  .feature .thumb{min-height:340px;background:var(--lightblue);}
+  .feature .thumb img{width:100%;height:100%;object-fit:cover;}
+  .feature .body{padding:40px 38px;display:flex;flex-direction:column;justify-content:center;gap:14px;}
+  .feature h2{font-size:clamp(26px,3.2vw,38px);color:var(--navy);}
+  .feature p{font-size:15.5px;color:rgba(39,54,85,0.75);}
+  .feature .latest{align-self:flex-start;background:var(--sage);color:var(--navy);font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px;}
+  .year-head{font-family:'Anton',sans-serif;font-size:28px;color:var(--navy);margin:8px 0 22px;padding-top:26px;border-top:2px solid var(--navy);}
+  .year-block{margin-bottom:48px;}
+
+  .post-head{padding:48px 0 36px;background:var(--cream);}
+  .post-head .wrap{max-width:1040px;}
+  .post-head .inner{max-width:860px;}
+  .back{display:inline-block;font-size:14px;font-weight:600;color:var(--navy);opacity:.75;margin-bottom:26px;}
+  .back:hover{opacity:1;text-decoration:underline;}
+  .post-head .tagline{font-size:13px;font-weight:700;color:var(--orange);margin-bottom:14px;}
+  .post-head h1{font-size:clamp(30px,5vw,54px);color:var(--navy);margin-bottom:22px;}
+  .byline{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14.5px;color:rgba(39,54,85,0.72);}
+  .byline strong{color:var(--navy);font-weight:700;}
+  .cover{max-width:1040px;margin:0 auto;padding:0 28px;}
+  .cover img{width:100%;height:auto;max-height:600px;object-fit:cover;border-radius:18px;background:var(--lightblue);}
+  .cover figcaption{font-size:12.5px;color:rgba(39,54,85,0.6);margin-top:10px;}
+  .cover figcaption a{text-decoration:underline;}
+  .post-body{padding:48px 0 72px;}
+  .prose{max-width:700px;margin:0 auto;padding:0 28px;font-size:17.5px;line-height:1.75;color:#2b3a58;}
+  .prose p{margin:0 0 1.25em;}
+  .prose h2{font-family:'Inter',sans-serif;text-transform:none;letter-spacing:-0.01em;font-weight:700;font-size:26px;line-height:1.25;color:var(--navy);margin:2em 0 .7em;scroll-margin-top:90px;}
+  .prose h3{font-family:'Inter',sans-serif;text-transform:none;letter-spacing:0;font-weight:700;font-size:19.5px;line-height:1.3;color:var(--navy);margin:1.7em 0 .6em;scroll-margin-top:90px;}
+  .prose a{color:var(--navy);text-decoration:underline;text-decoration-color:var(--orange);text-underline-offset:3px;}
+  .prose ul{list-style:none;margin:0 0 1.4em;padding:0;}
+  .prose ul li{position:relative;padding-left:22px;margin-bottom:.7em;}
+  .prose ul li::before{content:'';position:absolute;left:2px;top:.72em;width:7px;height:7px;border-radius:50%;background:var(--orange);}
+  .prose blockquote{margin:1.6em 0;padding:24px 28px;background:var(--sage);border-radius:16px;font-size:17px;line-height:1.65;}
+  .prose blockquote p:last-child{margin:0;}
+  .prose ul.timeline-list li{padding:14px 0 14px 128px;margin:0;border-top:1px solid rgba(39,54,85,0.12);font-size:16px;line-height:1.6;}
+  .prose ul.timeline-list li::before{display:none;}
+  .prose ul.timeline-list li strong{position:absolute;left:0;top:14px;width:116px;font-family:'Anton',sans-serif;font-weight:400;font-size:17px;color:var(--orange);line-height:1.35;}
+  .prose ul.handle-list{display:flex;flex-wrap:wrap;gap:8px;}
+  .prose ul.handle-list li{padding:0;margin:0;}
+  .prose ul.handle-list li::before{display:none;}
+  .prose ul.handle-list a{display:inline-block;background:var(--lightblue);border-radius:999px;padding:4px 14px;font-size:14.5px;font-weight:600;text-decoration:none;}
+  .prose p.q{font-weight:700;color:var(--navy);margin-top:2em;}
+  .prose p.q span,.prose p.a span{display:block;font-size:12.5px;font-weight:700;color:var(--orange);margin-bottom:2px;}
+  .prose p.a span{color:rgba(39,54,85,0.6);}
+  .toc{background:var(--white);border:1px solid rgba(39,54,85,0.1);border-radius:16px;padding:20px 24px;margin:0 0 2.2em;font-size:15px;}
+  .toc strong{display:block;font-size:13px;color:rgba(39,54,85,0.6);margin-bottom:8px;}
+  .toc ol{margin:0;padding-left:20px;} .toc li{margin:4px 0;}
+  .toc a{text-decoration:none;}
+  .toc a:hover{text-decoration:underline;}
+  .lang-switch{display:inline-flex;background:var(--white);border:1px solid rgba(39,54,85,0.15);border-radius:999px;padding:4px;margin-bottom:28px;}
+  .lang-switch button{font:inherit;font-size:14px;font-weight:600;border:0;background:none;color:var(--navy);padding:7px 18px;border-radius:999px;cursor:pointer;}
+  .lang-switch button[aria-pressed="true"]{background:var(--navy);color:var(--white);}
+  .refs{margin-top:2.4em;border-top:2px solid var(--navy);padding-top:18px;}
+  .refs summary{cursor:pointer;font-weight:700;font-size:16px;color:var(--navy);}
+  .refs ul{margin-top:14px;} .refs li{font-size:14.5px;line-height:1.6;word-break:break-word;}
+  .post-nav{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:900px;margin:0 auto;padding:0 28px;}
+  .post-nav a{display:block;background:var(--white);border:1px solid rgba(39,54,85,0.1);border-radius:16px;padding:20px 22px;}
+  .post-nav a:hover{border-color:var(--navy);}
+  .post-nav span{display:block;font-size:12.5px;font-weight:700;color:var(--orange);margin-bottom:6px;}
+  .post-nav strong{font-size:15.5px;line-height:1.35;color:var(--navy);}
+  .post-nav .older{text-align:right;grid-column:2;}
+  @media (max-width:900px){.post-grid{grid-template-columns:1fr 1fr;} .feature{grid-template-columns:1fr;} .feature .thumb{min-height:240px;aspect-ratio:16/9;}}
+  @media (max-width:620px){.post-grid{grid-template-columns:1fr;} .feature .body{padding:26px 22px;} .prose{font-size:16.5px;} .prose ul.timeline-list li{padding-left:0;padding-top:40px;} .post-nav{grid-template-columns:1fr;} .post-nav .older{grid-column:1;text-align:left;}}
+</style>
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a href="../index.html"><img src="../img/awa-logo.png" alt="The AWA Project"></a>
+    <div class="nav-links">
+      <a href="../work.html">Our Work</a>
+      <a href="../youth.html">Youth in Action</a>
+      <a href="../events.html">Events</a>
+      <a href="../impact.html">Impact</a>
+      <a href="../sdgs.html">Know Your SDGs</a>
+      <a href="../behind.html">Behind AWA</a>
+      <a href="../blog/index.html" class="active">Blog</a>
+      <a href="../shop.html">Shop</a>
+    </div>
+    <a href="#" class="btn btn-outline-navy">Donate</a>
+    <button class="mobile-toggle" aria-label="Menu">&#9776;</button>
+  </nav>
+</header>
+<section class="post-head">
+  <div class="wrap"><div class="inner">
+    <a class="back" href="index.html">&larr; All posts</a>
+    <div class="tagline">Behavioural economics · Cape Town</div>
+    <h1>Why We Wait for a Water Crisis to Care: The Cost of Water Invisibility</h1>
+    <div class="byline"><span>By <strong>Emi Oyakawa Toyofuku</strong></span><span>31 October 2025</span><span>5 min read</span></div>
+  </div></div>
+</section>
+<figure class="cover"><img src="img/why-we-wait-for-a-water-crisis-to-care.webp" alt="" width="844" height="474" style="object-position:center"></figure>
+<section class="post-body" style="padding-bottom:40px">
+  <article class="prose">
+<p>In the early months of 2018, Cape Town became the first major city in the world to be on the brink of Day Zero: the moment when municipal water could run dry. Water trucks became lifelines, families queued with buckets, and paper cups and plates became the norm to save water. The crisis felt sudden, yet it wasn’t. Scientists and economists have long warned us that water insecurity in megacities is a ticking time bomb. So why does it take a near-collapse for people to notice?</p>
+<p>This is the paradox of water: essential yet many times invisible. In many urban areas, water is expected, on tap, pressurized, and clean. The infrastructure that delivers it, pipes, treatment plants and reservoirs, operates silently, mostly underground and out of sight. For many of us, water feels like a guaranteed resource: immediate, reliable, limitless, and almost invisible in its complexity. We can forget it has a long, complex, and increasingly fragile journey, one that goes through natural ecosystems, urban infrastructure, and a lot of human effort.</p>
+<h2 id="out-of-sight-out-of-mind-the-psychology-behind-water-neglect">Out of Sight, Out of Mind: The Psychology Behind Water Neglect</h2>
+<p>In high-income and urbanized settings, the convenience of turning a tap masks the immense effort required to bring water safely to homes. Behavioural economics helps us to understand why this disconnect happens.</p>
+<p><strong>Temporal discounting</strong> means that we tend to undervalue future risks. Warnings about water shortages in 2030 or 2050 don't resonate with us when today’s sink is full. <strong>Spatial discounting</strong> adds another layer, since problems in distant neighbourhoods, cities, or countries can feel abstract and less urgent because they are not affecting us.</p>
+<p>Then, there’s the <strong>availability heuristic</strong>: if you’ve never experienced a water crisis, it seems improbable and even impossible. And when people take small eco-friendly steps, like recycling, avoiding plastic straws, or taking shorter showers, they may fall into <strong>moral licensing</strong>: convincing themselves they've “done enough,” even if their water footprint remains high.</p>
+<p>These psychological tendencies are reinforced by urban privilege. In informal or lower-income settlements, water scarcity is a lived reality, with lines, rations and irregular access to water. But in affluent areas, it’s a background service that can be taken for granted.</p>
+<h2 id="the-economics-of-water-invisibility">The Economics of Water Invisibility</h2>
+<p>Water is a textbook example of a public good: essential, broadly accessible, yet vulnerable to overuse. While it’s technically non-excludable, it often becomes rivalrous, limited in supply when over-extracted, especially during droughts. Yet, in many cities, water remains underpriced. Low water bills relative to income mean that the perceived marginal cost of use is tiny, weakening incentives to conserve.</p>
+<p>Water overuse, pollution, and infrastructure neglect also generate <strong>negative externalities</strong>, costs that are not paid by the consumers but by the environment, future generations, and marginalized communities. Farmers drilling deeper wells, industries polluting rivers, or municipalities deferring pipe repairs all shift hidden costs downstream.</p>
+<p>When individuals and governments delay action, they often fall into <strong>reactive governance</strong>: responding to emergencies instead of preventing them. Economically, this is inefficient. By the time crisis hits, solutions, like importing water by train or building desalination plants, are far more expensive than what an early investment in sustainable systems would have cost.</p>
+<h2 id="crisis-as-catalyst-when-the-tap-runs-dry">Crisis as Catalyst: When the Tap Runs Dry</h2>
+<p>Cape Town’s 2018 water crisis is a striking example of how public response only kicks in when scarcity becomes impossible to ignore. The city relied heavily on dams that store rainfall from the winter season. Warning signs had been present for decades: as early as 1990, the <em>Cape Times</em> reported the city could run out of water within 17 years. Yet, little changed until dam levels began to drop sharply around 2015 because of a drought.</p>
+<p>In response, authorities gradually introduced water restrictions, but it wasn’t until late 2017, with the release of the city’s Critical Water Shortages Disaster Plan, that behaviour shifted dramatically. By then, Day Zero, the projected date when municipal water would be shut off, was looming.</p>
+<p>The city implemented strict measures: bans on hosepipes, pool filling, and car washing, alongside emergency desalination efforts and widespread public dashboards. Households were limited to 50 litres per person per day (by contrast, the average Canadian uses 223 litres daily). High-usage homes were “shame tagged,” and businesses joined in: hotels removed bath plugs.</p>
+<p>Public campaigns made the crisis visible everywhere: water-saving tips flooded social media, countdowns to Day Zero appeared on highway signs, and behavioural nudges encouraged conservation through social media. A campaign with the slogan “if it's yellow let it mellow…” was created to encourage reusing toilet water, since 10 litres of water are needed to flush a toilet. The result? A dramatic drop in consumption.</p>
+<p>This pattern illustrates <strong>scarcity salience</strong>: we act only when scarcity becomes immediate and visible. But water crises are slow-onset disasters, not dramatic like hurricanes or earthquakes. The metaphor of the boiling frog applies: when conditions worsen gradually, we don’t jump to act.</p>
+<h2 id="bridging-the-gap-before-it-s-too-late">Bridging the Gap Before It’s Too Late</h2>
+<p>The good news? We don’t have to wait for collapse to act.</p>
+<p>Behavioural tools, like smart meters, real-time usage feedback, and norm-based messaging like “shame tags” on high-use households, can nudge people toward conservation before disaster strikes. In Cape Town, public dashboards showing dam levels turned water from an individual concern into a shared civic responsibility.</p>
+<p>Information economics also plays a role. Transparent billing, leak alerts, and user-friendly data reduce information asymmetry between providers and users, making the true cost of water visible and thus more likely to be valued.</p>
+<p>Infrastructure investment may not be flashy, but framed in terms of cost-benefit, the value is clear: preventing drought, reducing disease, and building resilience to climate change. Local governments can also empower community-based monitoring, particularly in underserved areas, to ensure accountability and elevate marginalized voices, especially youth in water governance.</p>
+<h2 id="a-shared-responsibility-from-crisis-to-consciousness">A Shared Responsibility: From Crisis to Consciousness</h2>
+<p>Cape Town didn’t reach Day Zero, but the fact that we waited until the brink to change our behaviour raises a troubling question: why do we need a disaster to act on what we already know?</p>
+<p>As we reflect during Earth Month, let’s reconsider our relationship with water. It doesn’t just “show up.” It travels through ecosystems, engineering, and policies. And if we continue treating it as an invisible convenience, we risk losing it entirely.</p>
+<p>Water connects us all. By combining economic reasoning with behavioural insights, and pairing smart policy with community leadership, we can make water visible before it's gone. Because the cost of waiting is too high.</p>
+<details class="refs"><summary>Sources (5)</summary><ul>
+<li>Frontier Economics. Lessons learned from the Cape Town water crisis. <a href="https://www.frontier-economics.com/uk/en/news-and-insights/articles/article-i9164-lessons-learned-from-the-cape-town-water-crisis/">https://www.frontier-economics.com/uk/en/news-and-insights/articles/article-i9164-lessons-learned-from-the-cape-town-water-crisis/</a></li>
+<li>Statistics Canada. World Water Day, eh? <a href="https://www.statcan.gc.ca/o1/en/plus/5814-world-water-day-eh">https://www.statcan.gc.ca/o1/en/plus/5814-world-water-day-eh</a></li>
+<li>TIME. Cape Town water crisis. <a href="https://time.com/cape-town-south-africa-water-crisis/">https://time.com/cape-town-south-africa-water-crisis/</a></li>
+<li>Global Citizen. Cape Town water crisis: Day Zero to overflowing dams. <a href="https://www.globalcitizen.org/en/content/cape-town-water-crisis-day-zero-overflowing-dams/">https://www.globalcitizen.org/en/content/cape-town-water-crisis-day-zero-overflowing-dams/</a></li>
+<li>World Economic Forum (2019). Cape Town was 90 days away from running out of water. <a href="https://www.weforum.org/stories/2019/08/cape-town-was-90-days-away-from-running-out-of-water-heres-how-it-averted-the-crisis/">https://www.weforum.org/stories/2019/08/cape-town-was-90-days-away-from-running-out-of-water-heres-how-it-averted-the-crisis/</a></li>
+</ul></details>
+  </article>
+</section>
+<section style="padding:0 0 80px"><div class="post-nav"><a class="newer" href="scientific-divulgation-through-social-media-times.html"><span>&larr; Newer</span><strong>Scientific Divulgation Through Social Media Times</strong></a><a class="older" href="un-youth-dialogue-peru-2025.html"><span>Older &rarr;</span><strong>UN Youth Dialogue - Peru 2025</strong></a></div></section>
+<footer>
+  <div class="wrap">
+    &copy; 2026 The AWA Project &middot; A youth-led movement for water justice
+  </div>
+</footer>
+<style>
+  @media (max-width:720px){
+    .nav{position:relative;flex-wrap:wrap;}
+    .nav-links.open{display:flex;flex-direction:column;align-items:flex-start;gap:4px;width:100%;order:10;padding:12px 0 6px;}
+    .nav-links.open a{padding:8px 0;font-size:16px;}
+  }
+</style>
+<script>
+document.querySelectorAll('.mobile-toggle').forEach(function(b){
+  var links=b.closest('.nav').querySelector('.nav-links');
+  b.setAttribute('aria-expanded','false');
+  b.addEventListener('click',function(){var o=links.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+});
+</script>
+</body>
+</html>
