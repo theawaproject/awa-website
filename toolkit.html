@@ -320,9 +320,9 @@
       <h2>Be the first to know</h2>
       <p>Join the launch list for the Waterways of Change toolkit, or ask us about consulting and workshops.</p>
     </div>
-    <form name="shop-interest" method="POST" data-netlify="true" netlify-honeypot="company-website" class="interest-form">
-      <input type="hidden" name="form-name" value="shop-interest">
-      <p style="display:none"><label>Leave empty <input name="company-website"></label></p>
+    <form name="shop-interest" method="POST" action="https://formspree.io/f/mjygvzgp" class="interest-form">
+      <input type="hidden" name="_subject" value="New message from the AWA Shop page">
+      <p style="display:none"><label>Leave empty <input name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
       <label for="i-name">Name</label><input id="i-name" name="name" required autocomplete="name">
       <label for="i-email">Email</label><input id="i-email" name="email" type="email" required autocomplete="email">
       <label for="i-topic">I'm interested in</label>
@@ -341,7 +341,7 @@
 document.querySelectorAll('[data-interest]').forEach(function(a){a.addEventListener('click',function(){var sel=document.getElementById('i-topic');if(sel)sel.value=a.dataset.interest;})});
 var f=document.querySelector('form[name=shop-interest]');
 f.addEventListener('submit',function(e){e.preventDefault();var b=f.querySelector('button');b.disabled=true;b.textContent='Sending…';
- fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(f)).toString()})
+ fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
  .then(function(r){if(!r.ok)throw 0;f.innerHTML='<h3 style="font-family:Inter,sans-serif;text-transform:none;letter-spacing:0;font-size:20px;font-weight:700;margin-bottom:8px">Thank you!</h3><p style="font-size:15px">We have your details and will be in touch soon.</p>';})
  .catch(function(){b.disabled=false;b.textContent='Send';alert('Sorry, your message could not be sent. Please try again later.');});
 });
