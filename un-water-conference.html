@@ -141,81 +141,48 @@
   .un-hero .wrap{display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:end;}
   .un-hero h1{font-size:clamp(34px,5.2vw,58px);max-width:none;margin-bottom:20px;}
   .un-hero .lede{font-size:18px;color:rgba(255,255,255,.85);max-width:560px;}
-  .org-line{margin-top:22px;font-size:14px;color:rgba(255,255,255,.7);}
-  .org-line strong{color:var(--white);font-weight:600;}
+  .hosts{display:inline-flex;align-items:center;gap:16px;margin-top:28px;background:var(--white);border-radius:16px;padding:10px 20px;}
+  .hosts img{width:auto;display:block;}
+  .hosts .x{color:var(--navy);opacity:.4;font-size:20px;}
   .when{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:26px 26px 22px;}
   .when .label{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lightblue);margin-bottom:8px;}
-  .when .date{font-family:'Anton',sans-serif;font-size:30px;line-height:1.05;letter-spacing:-.01em;margin-bottom:6px;}
+  .when .date{font-family:'Anton',sans-serif;font-size:30px;line-height:1.05;margin-bottom:6px;}
   .when .time{font-size:15px;color:rgba(255,255,255,.85);}
   .when .local{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.14);font-size:14px;color:rgba(255,255,255,.85);}
   .when .local strong{color:var(--white);}
   .when .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;}
-  .btn-light{background:var(--white);color:var(--navy);}
   .facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
   .facts span{font-size:12.5px;font-weight:600;background:rgba(255,255,255,.1);border-radius:999px;padding:5px 12px;}
 
-  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
-  .prose-lg p{font-size:17px;line-height:1.7;color:rgba(39,54,85,.85);margin-bottom:16px;}
-  .pull{border-left:4px solid var(--orange);padding:4px 0 4px 22px;font-size:21px;line-height:1.45;font-weight:600;color:var(--navy);}
+  .about{max-width:820px;}
+  .about p{font-size:19px;line-height:1.65;color:var(--navy);margin-top:16px;}
+  .about p.muted{font-size:16px;color:rgba(39,54,85,.7);}
 
-  .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-  .stat{background:var(--white);border-radius:18px;padding:26px 24px;}
-  .stat .n{font-family:'Anton',sans-serif;font-size:44px;line-height:1;color:var(--navy);}
-  .stat p{font-size:14.5px;color:rgba(39,54,85,.78);margin-top:10px;line-height:1.5;}
-  .stat .src{display:block;font-size:12px;color:rgba(39,54,85,.55);margin-top:10px;}
-
-  .obj-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;}
-  .obj-list li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.55;color:var(--navy);}
-  .obj-list li::before{content:'';position:absolute;left:2px;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--orange);}
-
-  .format{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
-  .format div{background:var(--cream);border-radius:16px;padding:20px;}
-  .format h3{font-family:'Inter',sans-serif;text-transform:none;letter-spacing:0;font-weight:700;font-size:15px;margin-bottom:6px;}
-  .format p{font-size:14px;color:rgba(39,54,85,.75);line-height:1.5;}
-  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;}
-  .chips span{background:var(--lightblue);border-radius:999px;padding:6px 14px;font-size:13.5px;font-weight:600;}
-  .soon{margin-top:22px;font-size:15px;color:rgba(39,54,85,.75);}
-
-  .after{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-  .after div{border-top:3px solid var(--navy);padding-top:16px;}
-  .after .when-tag{font-size:12.5px;font-weight:700;color:var(--orange);}
-  .after h3{font-family:'Inter',sans-serif;text-transform:none;letter-spacing:0;font-weight:700;font-size:17px;margin:6px 0 8px;}
-  .after p{font-size:14.5px;color:rgba(39,54,85,.75);line-height:1.55;}
+  .orgs{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .org{background:var(--white);border-radius:20px;padding:28px;display:flex;gap:24px;align-items:center;}
+  .org .logo{flex-shrink:0;width:110px;display:flex;justify-content:center;}
+  .org .logo img{width:auto;max-width:110px;}
+  .org h3{font-family:'Inter',sans-serif;text-transform:none;letter-spacing:0;font-weight:700;font-size:19px;margin-bottom:8px;}
+  .org p{font-size:15px;color:rgba(39,54,85,.78);line-height:1.55;}
+  .org a{display:inline-block;margin-top:10px;font-size:14px;font-weight:600;text-decoration:underline;text-decoration-color:var(--orange);text-underline-offset:3px;}
 
   .reg{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start;}
   .reg h2{font-size:clamp(28px,4vw,42px);color:var(--navy);margin:10px 0 16px;}
   .reg .intro p{font-size:16px;color:rgba(39,54,85,.8);margin-bottom:14px;}
-  .steps{list-style:none;counter-reset:s;margin-top:18px;}
-  .steps li{counter-increment:s;position:relative;padding-left:40px;margin-bottom:14px;font-size:15px;line-height:1.5;}
-  .steps li::before{content:counter(s);position:absolute;left:0;top:-2px;width:28px;height:28px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;}
-  .form-box{background:var(--white);border-radius:20px;overflow:hidden;min-height:200px;}
-  .form-box iframe{display:block;width:100%;height:1100px;border:0;}
+  .reg .contact a{text-decoration:underline;font-weight:600;}
+  .form-box{background:var(--white);border-radius:20px;overflow:hidden;}
+  .form-box iframe{display:block;width:100%;height:1500px;border:0;}
   .form-empty{padding:40px 32px;text-align:center;}
   .form-empty h3{font-family:'Inter',sans-serif;text-transform:none;letter-spacing:0;font-weight:700;font-size:20px;margin-bottom:10px;}
   .form-empty p{font-size:15px;color:rgba(39,54,85,.75);}
   .form-alt{padding:14px 20px;font-size:13.5px;border-top:1px solid rgba(39,54,85,.08);text-align:center;}
   .form-alt a{text-decoration:underline;font-weight:600;}
 
-  .orgs{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
-  .org{background:var(--cream);border-radius:18px;padding:26px;}
-  .org .role{font-size:12.5px;font-weight:700;color:var(--orange);margin-bottom:6px;}
-  .org h3{font-family:'Inter',sans-serif;text-transform:none;letter-spacing:0;font-weight:700;font-size:19px;margin-bottom:8px;}
-  .org p{font-size:14.5px;color:rgba(39,54,85,.75);line-height:1.55;}
-  .contact{margin-top:22px;font-size:15px;}
-  .contact a{text-decoration:underline;font-weight:600;}
-
-  .awa-un{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-  .awa-un div{background:rgba(255,255,255,.06);border-radius:18px;padding:24px;}
-  .awa-un h3{font-family:'Inter',sans-serif;text-transform:none;letter-spacing:0;font-weight:700;font-size:16.5px;margin-bottom:8px;color:var(--white);}
-  .awa-un p{font-size:14.5px;color:rgba(255,255,255,.78);line-height:1.55;}
-
   @media (max-width:900px){
-    .un-hero .wrap,.two-col,.reg{grid-template-columns:1fr;gap:32px;}
-    .stat-row,.after,.awa-un{grid-template-columns:1fr;}
-    .format{grid-template-columns:1fr 1fr;}
-    .obj-list,.orgs{grid-template-columns:1fr;}
+    .un-hero .wrap,.reg{grid-template-columns:1fr;gap:32px;}
+    .orgs{grid-template-columns:1fr;}
   }
-  @media (max-width:520px){ .format{grid-template-columns:1fr;} .form-box iframe{height:1300px;} }
+  @media (max-width:520px){ .org{flex-direction:column;align-items:flex-start;} .form-box iframe{height:1800px;} }
 
 </style>
 </head>
@@ -246,102 +213,57 @@
     <div>
       <div class="eyebrow">Official Virtual Side Event &middot; 2026 UN Water Conference</div>
       <h1>From Presence to Influence: Young Women Reshaping Multilateral Water Decisions</h1>
-      <p class="lede">Young women are increasingly invited into multilateral water processes, yet being in the room does not mean shaping what leaves it. Join young women from the Global South to explore what separates presence from influence.</p>
-      <p class="org-line">Co-organized by <strong>The AWA Project</strong> and <strong>South Asia Young Women in Water (SAYWiW)</strong></p>
+      <p class="lede">Being invited into the room is not the same as shaping what leaves it. Young women from the Global South share how they move from presence to influence in global water decisions.</p>
+      <div class="hosts" aria-label="Organized by">
+        <img src="img/awa-logo.png" alt="The AWA Project" height="56">
+        <span class="x" aria-hidden="true">&times;</span>
+        <img src="img/saywiw-logo.png" alt="South Asia Young Women in Water (SAYWiW)" height="64">
+      </div>
     </div>
     <aside class="when" aria-label="Date and time">
       <div class="label">When</div>
       <div class="date" id="ev-date">Saturday 5 December 2026</div>
       <div class="time" id="ev-time">18:00&ndash;19:30 Abu Dhabi time (GST)</div>
       <div class="local" id="ev-local" hidden></div>
-      <div class="facts"><span>Online</span><span>Free</span><span>90 minutes</span><span>English &middot; live captions</span></div>
+      <div class="facts"><span>Online</span><span>Free</span><span>In English</span></div>
       <div class="actions">
         <a href="#register" class="btn btn-orange">Register</a>
-        <a href="#" class="btn btn-outline-light" id="ev-cal" hidden target="_blank" rel="noopener">Add to Google Calendar</a>
+        <a href="#" class="btn btn-outline-light" id="ev-cal" hidden target="_blank" rel="noopener">Add to calendar</a>
       </div>
     </aside>
   </div>
 </section>
 
 <section class="bg-white">
-  <div class="wrap two-col">
-    <div>
-      <div class="section-head" style="margin-bottom:24px">
-        <div class="eyebrow">About the event</div>
-        <h2>A seat in the room is not the same as a voice in the outcome</h2>
-      </div>
-      <div class="prose-lg">
-        <p>This session centres young women from the Global South, with an intersectional lens that brings in Indigenous young women and the wider youth constituency. Speakers from South Asia, Latin America and other Global South regions will share how they have moved agendas, and where they have been blocked.</p>
-        <p>An interactive segment will capture participants&rsquo; own barriers and proposals in real time. Everything we gather feeds a co-authored policy op-ed with concrete recommendations for multilateral institutions.</p>
-        <p>Young women lead the conversation, and everyone is welcome: institutional representatives, senior practitioners and allies are invited to listen and commit.</p>
-      </div>
-    </div>
-    <div style="padding-top:8px">
-      <p class="pull">Young women do not need only a seat in the room; they need fair access to the knowledge, networks, resources and decision-making pathways that allow their expertise to shape outcomes.</p>
-    </div>
+  <div class="wrap about">
+    <div class="eyebrow-o">About the event</div>
+    <p>Young women are increasingly invited into multilateral water processes, but they are rarely the ones shaping the outcomes. In this 90-minute session, speakers from South Asia, Latin America and across the Global South share how they have moved agendas and where they have been blocked. Your ideas, gathered live during the session, will feed a joint policy op-ed with recommendations for multilateral institutions.</p>
+    <p class="muted">Open to everyone. Young women lead the conversation; allies and institutions are welcome to listen and commit.</p>
   </div>
 </section>
 
 <section class="bg-sage">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Why it matters</div>
-      <h2>The rooms where water is decided are far from the people it affects</h2>
+      <div class="eyebrow">Organizers</div>
+      <h2>Two youth-led organizations, one South&ndash;South partnership</h2>
     </div>
-    <div class="stat-row">
-      <div class="stat"><div class="n">1.2%</div><p>of parliamentary seats worldwide are held by young women aged 30 or under.</p><span class="src">Inter-Parliamentary Union, 2026</span></div>
-      <div class="stat"><div class="n">&lt; 1 in 5</div><p>water utility workers is a woman.</p><span class="src">World Bank, 2019</span></div>
-      <div class="stat"><div class="n">~6%</div><p>of the world&rsquo;s population are Indigenous Peoples, whose voices remain marginal in global water governance.</p><span class="src">World Bank</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-white">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">What we&rsquo;ll explore</div>
-      <h2>Six questions for the session</h2>
-    </div>
-    <ul class="obj-list">
-      <li>How expertise from economics, food security, climate, health, biodiversity and diplomacy strengthens water decisions.</li>
-      <li>The difference between being invited into a process and being able to change its direction.</li>
-      <li>The barriers young women from the Global South face, from visas and funding to language and the recognition of traditional knowledge.</li>
-      <li>Strategies that have helped young women navigate and influence multilateral spaces.</li>
-      <li>Practical recommendations for multilateral institutions, networks and emerging professionals.</li>
-      <li>How to keep the conversation going after the Conference.</li>
-    </ul>
-  </div>
-</section>
-
-<section class="bg-white" style="padding-top:0">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Format &amp; speakers</div>
-      <h2>Ninety minutes, built for participation</h2>
-    </div>
-    <div class="format">
-      <div><h3>Online and free</h3><p>Open to everyone, wherever you are.</p></div>
-      <div><h3>Live captioning</h3><p>Held in English with live captions and a moderated chat.</p></div>
-      <div><h3>Your language welcome</h3><p>Contributions in Spanish and other languages are welcome in the chat.</p></div>
-      <div><h3>Interactive</h3><p>Real-time polls capture your barriers and proposals.</p></div>
-    </div>
-    <p class="soon"><strong>Speakers</strong> from South Asia, Latin America and other Global South regions, working across:</p>
-    <div class="chips"><span>Economics</span><span>Food security</span><span>Climate</span><span>Health</span><span>Biodiversity</span><span>Diplomacy</span></div>
-    <p class="soon">Full speaker line-up and agenda coming soon.</p>
-  </div>
-</section>
-
-<section class="bg-sage">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">After the event</div>
-      <h2>Our commitments</h2>
-      <p>What you share in the session doesn&rsquo;t end there.</p>
-    </div>
-    <div class="after">
-      <div><span class="when-tag">Within 2 months</span><h3>A joint policy op-ed</h3><p>Co-authored by SAYWiW and AWA with recommendations for multilateral institutions, shared with the Conference Secretariat, UN-Water members and youth water networks.</p></div>
-      <div><span class="when-tag">Within 3 months</span><h3>A virtual follow-up session</h3><p>Reporting back on how the op-ed travelled and on progress against the commitments made.</p></div>
-      <div><span class="when-tag">Ongoing</span><h3>A Global South peer network</h3><p>A cross-regional network of young women water professionals to keep building influence together.</p></div>
+    <div class="orgs">
+      <div class="org">
+        <div class="logo"><img src="img/awa-logo.png" alt="The AWA Project logo" height="84"></div>
+        <div>
+          <h3>The AWA Project</h3>
+          <p>A youth-led nonprofit from Peru working for water justice. AWA is accredited to the 2026 UN Water Conference.</p>
+          <a href="index.html">theawaproject.org</a>
+        </div>
+      </div>
+      <div class="org">
+        <div class="logo"><img src="img/saywiw-logo.png" alt="South Asia Young Women in Water logo" height="96"></div>
+        <div>
+          <h3>South Asia Young Women in Water</h3>
+          <p>A youth-led initiative empowering young women water professionals across South Asia.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -351,58 +273,14 @@
     <div class="intro">
       <div class="eyebrow-o">Registration</div>
       <h2>Save your spot</h2>
-      <p>Registration is free and open to all.</p>
-      <ol class="steps">
-        <li>Fill in the short form.</li>
-        <li>You&rsquo;ll receive a Google Calendar invitation with the Google Meet link.</li>
-        <li>Join us on the day. Bring your questions and proposals.</li>
-      </ol>
+      <p>Registration is free. After you register, you&rsquo;ll receive a calendar invitation with the Google Meet link.</p>
+      <p class="contact">Questions? <a id="contact-link" href="mailto:andrea@theawaproject.org">andrea@theawaproject.org</a></p>
     </div>
     <div class="form-box" id="form-box">
       <div class="form-empty">
         <h3>Registration opens soon</h3>
-        <p>Check back in a few days, or write to us at <a id="contact-inline" href="mailto:andrea@theawaproject.org">andrea@theawaproject.org</a>.</p>
+        <p>Check back in a few days.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-white">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Organizers</div>
-      <h2>Built South to South</h2>
-    </div>
-    <div class="orgs">
-      <div class="org"><div class="role">Lead organizer</div><h3>The AWA Project</h3><p>A youth-led nonprofit from Peru working for water justice, and an accredited organization at the 2026 UN Water Conference.</p></div>
-      <div class="org"><div class="role">Co-organizer</div><h3>South Asia Young Women in Water (SAYWiW)</h3><p>A youth-led initiative empowering young women water professionals across South Asia.</p></div>
-    </div>
-    <p class="contact">Questions about the event? Write to <a id="contact-link" href="mailto:andrea@theawaproject.org">andrea@theawaproject.org</a></p>
-  </div>
-</section>
-
-<section class="bg-navy">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">AWA at the Conference</div>
-      <h2>Our road to Abu Dhabi</h2>
-      <p>The 2026 UN Water Conference takes place on 8&ndash;10 December 2026 in Abu Dhabi. Here&rsquo;s how AWA is taking part.</p>
-    </div>
-    <div class="awa-un">
-      <div><h3>Accredited organization</h3><p>AWA is accredited to the 2026 UN Water Conference, bringing a youth-led voice from Peru and Latin America.</p></div>
-      <div><h3>Youth Organizing Committee</h3><p>As part of the Youth Organizing Committee, AWA works on water in multilateral processes and the youth position on multilateralism.</p></div>
-      <div><h3>This side event</h3><p>Together with SAYWiW, we host an official virtual side event on young women&rsquo;s influence in multilateral water decisions.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="cta-strip">
-  <div class="wrap">
-    <h2>Be in the room. Shape what leaves it.</h2>
-    <p>Register for the session and share it with young women in water in your network.</p>
-    <div class="cta-row">
-      <a href="#register" class="btn btn-orange btn-lg">Register now</a>
-      <a href="events.html" class="btn btn-outline-light btn-lg">See all events</a>
     </div>
   </div>
 </section>
@@ -425,7 +303,7 @@ var EVENT = {
 /* ================================================== */
 (function(){
   function toUTC(d,hm){var p=hm.split(':');return new Date(Date.UTC(+d.slice(0,4),+d.slice(5,7)-1,+d.slice(8,10),+p[0]-4,+p[1]));}
-  var mail=document.querySelectorAll('#contact-link,#contact-inline');
+  var mail=document.querySelectorAll('#contact-link');
   mail.forEach(function(a){a.href='mailto:'+EVENT.contact;a.textContent=EVENT.contact;});
 
   // Date, local time and calendar link
