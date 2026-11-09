@@ -251,8 +251,8 @@
     </div>
     <aside class="when" aria-label="Date and time">
       <div class="label">When</div>
-      <div class="date" id="ev-date">December 2026</div>
-      <div class="time" id="ev-time">06:00&ndash;07:30 Abu Dhabi time (GST)</div>
+      <div class="date" id="ev-date">Saturday 5 December 2026</div>
+      <div class="time" id="ev-time">18:00&ndash;19:30 Abu Dhabi time (GST)</div>
       <div class="local" id="ev-local" hidden></div>
       <div class="facts"><span>Online</span><span>Free</span><span>90 minutes</span><span>English &middot; live captions</span></div>
       <div class="actions">
@@ -415,9 +415,9 @@
 <script>
 /* ===== Event settings: edit these values only ===== */
 var EVENT = {
-  date: '',            // e.g. '2026-12-08' (YYYY-MM-DD). Leave '' until confirmed.
-  startGST: '06:00',   // Abu Dhabi time (UTC+4)
-  endGST: '07:30',
+  date: '2026-12-05',  // e.g. '2026-12-08' (YYYY-MM-DD). Leave '' until confirmed.
+  startGST: '18:00',   // Abu Dhabi time (UTC+4)
+  endGST: '19:30',
   formUrl: '',         // Google Form link, e.g. 'https://docs.google.com/forms/d/e/XXXX/viewform'
   contact: 'andrea@theawaproject.org',
   title: 'From Presence to Influence: Young Women Reshaping Multilateral Water Decisions'
@@ -434,10 +434,10 @@ var EVENT = {
   var tz; try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone;}catch(x){}
   var loc=document.getElementById('ev-local');
   if(tz && tz!=='Asia/Dubai'){
-    var a=s.toLocaleTimeString([],tf), b=e.toLocaleTimeString([],tf);
+    var a=s.toLocaleTimeString('en-GB',tf), b=e.toLocaleTimeString('en-GB',tf);
     var city=tz.split('/').pop().replace(/_/g,' ');
     var txt='Your time ('+city+'): <strong>'+a+'&ndash;'+b+'</strong>';
-    if(EVENT.date){txt+=' on '+s.toLocaleDateString([],{weekday:'long',day:'numeric',month:'long'});}
+    if(EVENT.date){txt+=' on '+s.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'});}
     else{var dayGST=new Date(s.getTime()+4*3600e3).getUTCDate(), dayLoc=+s.toLocaleDateString('en-CA',{timeZone:tz}).slice(8,10);
       if(dayLoc<dayGST)txt+=' (the evening before)'; else if(dayLoc>dayGST)txt+=' (the next day)';}
     loc.innerHTML=txt; loc.hidden=false;
