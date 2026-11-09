@@ -227,7 +227,6 @@
       <div class="facts"><span>Online</span><span>Free</span><span>In English</span></div>
       <div class="actions">
         <a href="#register" class="btn btn-orange">Register</a>
-        <a href="#" class="btn btn-outline-light" id="ev-cal" hidden target="_blank" rel="noopener">Add to calendar</a>
       </div>
     </aside>
   </div>
@@ -317,10 +316,6 @@ var EVENT = {
   }
   if(EVENT.date){
     document.getElementById('ev-date').textContent=new Date(Date.UTC(+ref.slice(0,4),+ref.slice(5,7)-1,+ref.slice(8,10))).toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
-    var f=function(d){return d.toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');};
-    var cal=document.getElementById('ev-cal');
-    cal.href='https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent(EVENT.title)+'&dates='+f(s)+'/'+f(e)+'&details='+encodeURIComponent('Official virtual side event of the 2026 UN Water Conference, by The AWA Project and SAYWiW. Register: https://theawaproject.org/un-water-conference#register');
-    cal.hidden=false;
   } else {
     document.getElementById('ev-date').textContent='December 2026';
   }
