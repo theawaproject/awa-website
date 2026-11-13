@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shop | The AWA Project</title>
+<title>Tools &amp; Services | The AWA Project</title>
 <meta name="description" content="Tools and services for young water advocates from The AWA Project.">
 <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
 <link rel="icon" type="image/png" sizes="512x512" href="img/favicon.png">
@@ -236,7 +236,7 @@
       <a href="sdgs.html">Know Your SDGs</a>
       <a href="behind.html">Behind AWA</a>
       <a href="blog/index.html">Blog</a>
-      <a href="shop.html" class="active">Shop</a>
+      <a href="shop.html" class="active">Tools &amp; Services</a>
     </div>
     <div class="nav-right">
       <a href="https://gofund.me/d1b1653e1" class="btn btn-outline-navy" target="_blank" rel="noopener">Donate</a>
@@ -246,9 +246,9 @@
 </header>
 <section class="page-hero shop-hero">
   <div class="wrap">
-    <div class="eyebrow">Shop</div>
+    <div class="eyebrow">Tools &amp; Services</div>
     <h1>Tools and services for young water advocates.</h1>
-    <p>Our shop is opening soon. Everything we offer is built from our work with youth and communities, and every purchase will fund AWA's projects.</p>
+    <p>Our tools and services are coming soon. Everything we offer is built from our work with youth and communities, and every purchase will fund AWA's projects.</p>
   </div>
 </section>
 <section class="bg-white">
@@ -301,7 +301,7 @@
       <p>Join the launch list for the Waterways of Change toolkit, or ask us about consulting and workshops.</p>
     </div>
     <form name="shop-interest" method="POST" action="https://formspree.io/f/mjygvzgp" class="interest-form">
-      <input type="hidden" name="_subject" value="New message from the AWA Shop page">
+      <input type="hidden" name="_subject" value="New message from the AWA Tools & Services page">
       <p style="display:none"><label>Leave empty <input name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
       <label for="i-name">Name</label><input id="i-name" name="name" required autocomplete="name">
       <label for="i-email">Email</label><input id="i-email" name="email" type="email" required autocomplete="email">
@@ -327,8 +327,11 @@ f.addEventListener('submit',function(e){e.preventDefault();var b=f.querySelector
 });
 </script>
 <style>
-  @media (max-width:720px){
+  .nav-links a{white-space:nowrap;}
+  @media (max-width:1180px){
+    .nav-links{display:none;} .mobile-toggle{display:block;}
     .nav{position:relative;flex-wrap:wrap;}
+    .nav > .btn{margin-left:auto;margin-right:14px;}
     .nav-links.open{display:flex;flex-direction:column;align-items:flex-start;gap:4px;width:100%;order:10;padding:12px 0 6px;}
     .nav-links.open a{padding:8px 0;font-size:16px;}
   }

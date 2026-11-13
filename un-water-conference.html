@@ -201,7 +201,7 @@
       <a href="sdgs.html">Know Your SDGs</a>
       <a href="behind.html">Behind AWA</a>
       <a href="blog/index.html">Blog</a>
-      <a href="shop.html">Shop</a>
+      <a href="shop.html">Tools &amp; Services</a>
     </div>
     <div class="nav-right">
       <a href="https://gofund.me/d1b1653e1" class="btn btn-outline-navy" target="_blank" rel="noopener">Donate</a>
@@ -335,8 +335,11 @@ var EVENT = {
 })();
 </script>
 <style>
-  @media (max-width:720px){
+  .nav-links a{white-space:nowrap;}
+  @media (max-width:1180px){
+    .nav-links{display:none;} .mobile-toggle{display:block;}
     .nav{position:relative;flex-wrap:wrap;}
+    .nav > .btn{margin-left:auto;margin-right:14px;}
     .nav-links.open{display:flex;flex-direction:column;align-items:flex-start;gap:4px;width:100%;order:10;padding:12px 0 6px;}
     .nav-links.open a{padding:8px 0;font-size:16px;}
   }
