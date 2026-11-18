@@ -124,6 +124,17 @@
   .profile-card .role{font-size:13px;color:var(--orange);font-weight:700;margin-bottom:14px;}
   .profile-card ul{padding-left:18px;font-size:14px;color:rgba(39,54,85,0.75);line-height:1.7;}
 
+  .team-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  .team-card{background:var(--cream);border-radius:16px;padding:28px 20px 24px;text-align:center;}
+  .team-photo{display:block;width:112px;height:112px;margin:0 auto 16px;border-radius:50%;object-fit:cover;background:var(--lightblue);border:3px solid var(--white);box-shadow:0 0 0 2px var(--lightblue);}
+  .team-initials{display:flex;align-items:center;justify-content:center;font-family:'Anton',sans-serif;font-size:34px;color:var(--navy);}
+  .team-card h3{font-family:'Inter',sans-serif;font-weight:700;font-size:16px;color:var(--navy);margin-bottom:4px;line-height:1.3;}
+  .team-subhead{font-family:'Inter',sans-serif;font-weight:700;font-size:18px;color:var(--navy);margin:44px 0 18px;}
+  .section-head + .team-subhead{margin-top:0;}
+  .team-role{font-size:13px;font-weight:700;color:var(--orange);line-height:1.4;}
+  @media (max-width:900px){.team-grid{grid-template-columns:repeat(3,1fr);}}
+  @media (max-width:720px){.team-grid{grid-template-columns:repeat(2,1fr);gap:14px;} .team-card{padding:22px 12px 18px;} .team-photo{width:88px;height:88px;} .team-initials{font-size:28px;}}
+
   .values-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
   .value-item{padding:24px;background:var(--cream);border-radius:16px;}
   .value-item h3{font-family:'Inter',sans-serif;font-weight:700;font-size:16px;margin-bottom:8px;}
@@ -224,7 +235,140 @@
   </div>
 </section>
 
-<section class="bg-white">
+<section class="bg-white" id="team">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Our Team</div>
+      <h2>The people behind AWA</h2>
+      <p>A volunteer team of young professionals who shape our strategy, run our projects and carry our work into new spaces.</p>
+    </div>
+    <h3 class="team-subhead">Projects &amp; Impact</h3>
+    <ul class="team-grid">
+      <li class="team-card">
+        <img class="team-photo" src="img/team/andrea-yacavilca.webp" alt="Andrea Yacavilca" width="320" height="320" loading="lazy" decoding="async">
+        <h3>Andrea Yacavilca</h3>
+        <p class="team-role">Projects &amp; Impact Director</p>
+      </li>
+      <li class="team-card">
+        <div class="team-photo team-initials" aria-hidden="true">GS</div>
+        <h3>Grace Sesay</h3>
+        <p class="team-role">Community &amp; Education Manager</p>
+      </li>
+      <li class="team-card">
+        <div class="team-photo team-initials" aria-hidden="true">MA</div>
+        <h3>Maria Javiera De Andraca</h3>
+        <p class="team-role">Research &amp; Policy Manager</p>
+      </li>
+      <li class="team-card">
+        <img class="team-photo" src="img/team/micaela-cossio.webp" alt="Micaela Cossio" width="320" height="320" loading="lazy" decoding="async">
+        <h3>Micaela Cossio</h3>
+        <p class="team-role">Services &amp; Products Manager</p>
+      </li>
+      <li class="team-card">
+        <img class="team-photo" src="img/team/hannah-flores.webp" alt="Hannah Flores" width="320" height="320" loading="lazy" decoding="async">
+        <h3>Hannah Flores</h3>
+        <p class="team-role">Community &amp; Education Associate</p>
+      </li>
+      <li class="team-card">
+        <div class="team-photo team-initials" aria-hidden="true">JK</div>
+        <h3>Joelle Klein</h3>
+        <p class="team-role">Research &amp; Policy Associate</p>
+      </li>
+      <li class="team-card">
+        <div class="team-photo team-initials" aria-hidden="true">MG</div>
+        <h3>Mariana Gaviria</h3>
+        <p class="team-role">Research &amp; Policy Associate</p>
+      </li>
+    </ul>
+    <h3 class="team-subhead">Communications</h3>
+    <ul class="team-grid">
+      <li class="team-card">
+        <img class="team-photo" src="img/team/santiago-andres.webp" alt="Santiago Andrés" width="320" height="320" loading="lazy" decoding="async">
+        <h3>Santiago Andr&eacute;s</h3>
+        <p class="team-role">Communications Director</p>
+      </li>
+      <li class="team-card">
+        <div class="team-photo team-initials" aria-hidden="true">AC</div>
+        <h3>Antonella Ceruti</h3>
+        <p class="team-role">Social Media Manager</p>
+      </li>
+      <li class="team-card">
+        <img class="team-photo" src="img/team/norah-adams.webp" alt="Norah Adams" width="320" height="320" loading="lazy" decoding="async">
+        <h3>Norah Adams</h3>
+        <p class="team-role">Creative Strategy Manager</p>
+      </li>
+      <li class="team-card">
+        <div class="team-photo team-initials" aria-hidden="true">JC</div>
+        <h3>Julen Chavin</h3>
+        <p class="team-role">Creative Strategy Associate</p>
+      </li>
+      <li class="team-card">
+        <div class="team-photo team-initials" aria-hidden="true">SS</div>
+        <h3>Shilpi Sharma</h3>
+        <p class="team-role">Creative Strategy Fellow</p>
+      </li>
+    </ul>
+    <h3 class="team-subhead">Human Resources</h3>
+    <ul class="team-grid">
+      <li class="team-card">
+        <img class="team-photo" src="img/team/grace-godwin.webp" alt="Grace Godwin" width="320" height="320" loading="lazy" decoding="async">
+        <h3>Grace Godwin</h3>
+        <p class="team-role">Human Resources Director</p>
+      </li>
+      <li class="team-card">
+        <img class="team-photo" src="img/team/keziah-danquah.webp" alt="Keziah Danquah" width="320" height="320" loading="lazy" decoding="async">
+        <h3>Keziah Danquah</h3>
+        <p class="team-role">Recruitment Associate</p>
+      </li>
+    </ul>
+    <h3 class="team-subhead">Strategy &amp; Growth</h3>
+    <ul class="team-grid">
+      <li class="team-card">
+        <img class="team-photo" src="img/team/natalie-gahre.webp" alt="Natalie Gahre" width="320" height="320" loading="lazy" decoding="async">
+        <h3>Natalie Gahre</h3>
+        <p class="team-role">Strategy &amp; Growth Director</p>
+      </li>
+      <li class="team-card">
+        <img class="team-photo" src="img/team/helen-liebhaber.webp" alt="Helen Liebhaber" width="320" height="320" loading="lazy" decoding="async">
+        <h3>Helen Liebhaber</h3>
+        <p class="team-role">Strategy &amp; Growth Manager</p>
+      </li>
+    </ul>
+    <h3 class="team-subhead">Public Affairs</h3>
+    <ul class="team-grid">
+      <li class="team-card">
+        <img class="team-photo" src="img/team/maria-fernanda-chaparro.webp" alt="María Fernanda Chaparro" width="320" height="320" loading="lazy" decoding="async">
+        <h3>Mar&iacute;a Fernanda Chaparro</h3>
+        <p class="team-role">Public Affairs Director</p>
+      </li>
+      <li class="team-card">
+        <img class="team-photo" src="img/team/maricarmen-morales.webp" alt="Maricarmen Morales" width="320" height="320" loading="lazy" decoding="async">
+        <h3>Maricarmen Morales</h3>
+        <p class="team-role">Public Affairs Coordinator</p>
+      </li>
+      <li class="team-card">
+        <img class="team-photo" src="img/team/priscila-quiroz.webp" alt="Priscila Quiroz" width="320" height="320" loading="lazy" decoding="async">
+        <h3>Priscila Quiroz</h3>
+        <p class="team-role">Public Affairs Associate</p>
+      </li>
+    </ul>
+    <h3 class="team-subhead">Strategic Advisors</h3>
+    <ul class="team-grid">
+      <li class="team-card">
+        <img class="team-photo" src="img/team/jose-alfredo-andres.webp" alt="José Alfredo Andrés" width="320" height="320" loading="lazy" decoding="async">
+        <h3>Jos&eacute; Alfredo Andr&eacute;s</h3>
+        <p class="team-role">Strategic Advisor</p>
+      </li>
+      <li class="team-card">
+        <img class="team-photo" src="img/team/thalia-gutierrez.webp" alt="Thalia Gutierrez" width="320" height="320" loading="lazy" decoding="async">
+        <h3>Thalia Gutierrez</h3>
+        <p class="team-role">Strategic Advisor</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="bg-sage">
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow">What We Believe</div>
