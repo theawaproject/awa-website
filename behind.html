@@ -127,13 +127,12 @@
   .team-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
   .team-card{background:var(--cream);border-radius:16px;padding:28px 20px 24px;text-align:center;}
   .team-photo{display:block;width:112px;height:112px;margin:0 auto 16px;border-radius:50%;object-fit:cover;background:var(--lightblue);border:3px solid var(--white);box-shadow:0 0 0 2px var(--lightblue);}
-  .team-initials{display:flex;align-items:center;justify-content:center;font-family:'Anton',sans-serif;font-size:34px;color:var(--navy);}
   .team-card h3{font-family:'Inter',sans-serif;font-weight:700;font-size:16px;color:var(--navy);margin-bottom:4px;line-height:1.3;}
   .team-subhead{font-family:'Inter',sans-serif;font-weight:700;font-size:18px;color:var(--navy);margin:44px 0 18px;}
   .section-head + .team-subhead{margin-top:0;}
   .team-role{font-size:13px;font-weight:700;color:var(--orange);line-height:1.4;}
   @media (max-width:900px){.team-grid{grid-template-columns:repeat(3,1fr);}}
-  @media (max-width:720px){.team-grid{grid-template-columns:repeat(2,1fr);gap:14px;} .team-card{padding:22px 12px 18px;} .team-photo{width:88px;height:88px;} .team-initials{font-size:28px;}}
+  @media (max-width:720px){.team-grid{grid-template-columns:repeat(2,1fr);gap:14px;} .team-card{padding:22px 12px 18px;} .team-photo{width:88px;height:88px;}}
 
   .values-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
   .value-item{padding:24px;background:var(--cream);border-radius:16px;}
@@ -288,7 +287,7 @@
         <p class="team-role">Communications Director</p>
       </li>
       <li class="team-card">
-        <div class="team-photo team-initials" aria-hidden="true">AC</div>
+        <img class="team-photo" src="img/team/antonella-ceruti.webp" alt="Antonella Ceruti" width="320" height="320" loading="lazy" decoding="async">
         <h3>Antonella Ceruti</h3>
         <p class="team-role">Social Media Manager</p>
       </li>
